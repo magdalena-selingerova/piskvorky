@@ -63,7 +63,8 @@ a {
   padding: 15px;
 }
 
-.pravidla a:hover {
+.pravidla a:hover,
+.pravidla a:focus {
   background: #1cbb96;
 }
 
@@ -80,6 +81,7 @@ a {
   padding: 15px;
 }
 
-.hrat a:hover {
+.hrat a:hover,
+.hrat a:focus {
   background: #0090e9;
 }
