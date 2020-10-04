@@ -84,7 +84,8 @@ a {
   background: #0090e9;
 }
 
-/* stránka s pravidly */
+/* pravidla.html */
+/* úzká obrazovka */
 .container-pravidla {
   display: flex;
   flex-direction: column;
@@ -99,6 +100,7 @@ a {
 }
 .pravidlo {
   padding-top: 15px;
+  color: lightgrey;
 }
 .pravidlo:last-of-type {
   padding-bottom: 30px;
@@ -129,4 +131,26 @@ a {
 .home-page a:hover,
 .home-page a:focus {
   background: #1cbb96;
+}
+
+/* široká a velmi široká obrazovka */
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 800px;
+  }
+  .jak-hrat {
+    width: 80%;
+  }
+  .pravidlo {
+    font-size: 20px;
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .img-pravidla {
+    width: 45%;
+    margin: 10px;
+  }
 }
