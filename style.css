@@ -18,11 +18,11 @@ body {
   margin: 70px auto;
 }
 
-.img1 {
+.img-uvod {
   width: 100%;
 }
 
-.piskvorky {
+.nadpis1 {
   font-family: 'Lobster', cursive;
   text-align: center;
   font-size: 50px;
@@ -51,7 +51,7 @@ a {
   color: #ffffff;
 }
 
-.pravidla {
+.odkaz {
   background: #1fcca4;
   text-align: center;
   width: 100%;
@@ -70,9 +70,6 @@ a {
 
 .hrat {
   background: #0197f6;
-  text-align: center;
-  width: 100%;
-  display: block;
   border-top: solid 1px #283e50;
 }
 
@@ -84,4 +81,19 @@ a {
 .hrat a:hover,
 .hrat a:focus {
   background: #0090e9;
+}
+
+/* stránka s pravidly */
+.vzor {
+  width: 100%;
+}
+
+.home-page a {
+  display: block;
+  padding: 15px;
+}
+
+.home-page a:hover,
+.home-page a:focus {
+  background: #1cbb96;
 }
