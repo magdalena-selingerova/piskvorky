@@ -93,7 +93,7 @@ a {
 .jak-hrat {
   display: flex;
   flex-direction: column;
-  width: 67%;
+  width: 65%;
   padding: 0 75px;
   margin: 0;
 }
@@ -102,6 +102,11 @@ a {
 }
 .pravidlo:last-of-type {
   padding-bottom: 30px;
+}
+.xo {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
 }
 .vzor {
   width: 100%;
