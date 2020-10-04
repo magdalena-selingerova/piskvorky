@@ -12,10 +12,11 @@ body {
   background-image: linear-gradient(#615dad, #ffc8da);
 }
 
-#container {
+.container {
   background: #283e50;
   width: 400px;
   margin: 70px auto;
+  border-radius: 5px 5px;
 }
 
 .img-uvod {
@@ -84,8 +85,21 @@ a {
 }
 
 /* stránka s pravidly */
+.container-pravidla {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.jak-hrat {
+}
 .vzor {
   width: 100%;
+  margin: 0;
+}
+.popisek {
+  text-align: center;
+  font-style: italic;
+  padding: 10px 0;
 }
 
 .home-page a {
