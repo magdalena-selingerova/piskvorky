@@ -43,7 +43,7 @@ body {
   padding: 0;
 }
 
-li {
+.odkaz {
   display: inline-block;
 }
 
@@ -91,6 +91,17 @@ a {
   padding-top: 20px;
 }
 .jak-hrat {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+  padding: 0 75px;
+  margin: 0;
+}
+.pravidlo {
+  padding-top: 15px;
+}
+.pravidlo:last-of-type {
+  padding-bottom: 30px;
 }
 .vzor {
   width: 100%;
@@ -100,6 +111,9 @@ a {
   text-align: center;
   font-style: italic;
   padding: 10px 0;
+}
+.img-pravidla:last-of-type {
+  padding-bottom: 30px;
 }
 
 .home-page a {
