@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 html {
   height: 100%;
 }
@@ -21,6 +26,7 @@ body {
 
 .img-uvod {
   width: 100%;
+  border-radius: 5px 5px;
 }
 
 .nadpis1 {
@@ -153,4 +159,92 @@ a {
     width: 45%;
     margin: 10px;
   }
+}
+
+/* 3. úkol - hra */
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80vmin;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.title {
+  font-size: 70px;
+}
+.taskbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.info {
+  position: relative;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 10px;
+}
+.player {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2.75px solid white;
+  margin: 0;
+  margin-left: 5px;
+}
+.btns-taskbar {
+  display: flex;
+}
+.btn {
+  border-radius: 10%;
+  border: 0;
+  margin: 3px;
+  height: 35px;
+}
+.home {
+  background-color: #1fcca4;
+}
+.home a {
+  display: block;
+}
+.restart a {
+  display: block;
+}
+.restart {
+  background-color: #0197f6;
+}
+.home:hover,
+.home:focus {
+  background-color: #1cbb96;
+}
+.restart:hover,
+.restart:focus {
+  background-color: #0090e9;
+}
+.playing-field {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.5;
+  width: 100%;
+}
+.playing-field button {
+  width: 10%;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.playing-field button:hover,
+.playing-field button:focus {
+  filter: brightness(200%);
+}
+
+.playing-field button::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
 }
