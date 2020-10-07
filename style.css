@@ -100,7 +100,6 @@ a {
 .jak-hrat {
   display: flex;
   flex-direction: column;
-  width: 65%;
   padding: 0 75px;
   margin: 0;
 }
@@ -144,9 +143,7 @@ a {
   .container {
     width: 800px;
   }
-  .jak-hrat {
-    width: 80%;
-  }
+
   .pravidlo {
     font-size: 20px;
   }
