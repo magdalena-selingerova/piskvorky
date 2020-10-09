@@ -179,14 +179,13 @@ a {
   padding-bottom: 10px;
 }
 .info {
-  position: relative;
+  display: flex;
   font-size: 20px;
   margin: 0;
   padding-top: 10px;
 }
 .info::after {
   content: '';
-  position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
