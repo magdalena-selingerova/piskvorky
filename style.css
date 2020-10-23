@@ -178,14 +178,14 @@ a {
   justify-content: space-between;
   padding-bottom: 10px;
 }
-.info {
+.info-kolecko {
   display: flex;
   font-size: 20px;
   margin: 0;
   padding-top: 10px;
 }
 
-.info::after {
+.info-kolecko::after {
   content: '';
   width: 20px;
   height: 20px;
@@ -193,6 +193,9 @@ a {
   border: 2.75px solid white;
   margin: 0;
   margin-left: 5px;
+}
+.info-kolecko::before {
+  content: '';
 }
 .btns-taskbar {
   display: flex;
@@ -243,6 +246,28 @@ a {
 }
 
 /* 4. úkol - hra */
+.info-krizek {
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 10px;
+}
+.info-krizek:before,
+.info-krizek:after {
+  position: absolute;
+  left: 160px;
+  content: '';
+  height: 20px;
+  border: 1px solid white;
+  margin: 0;
+  margin-left: 5px;
+}
+.info-krizek:before {
+  transform: rotate(45deg);
+}
+.info-krizek:after {
+  transform: rotate(-45deg);
+}
 
 .board__field--circle {
   background-image: url(images/circle.svg);
