@@ -184,6 +184,7 @@ a {
   margin: 0;
   padding-top: 10px;
 }
+
 .info::after {
   content: '';
   width: 20px;
@@ -233,6 +234,7 @@ a {
   border: 1px solid black;
   margin: 0;
   padding: 0;
+  padding-top: 10%;
 }
 
 .playing-field button:hover,
@@ -240,8 +242,18 @@ a {
   filter: brightness(200%);
 }
 
-.playing-field button::before {
-  content: '';
-  display: block;
-  padding-top: 100%;
+/* 4. úkol - hra */
+
+.board__field--circle {
+  background-image: url(/images/circle.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+
+.board__field--cross {
+  background-image: url(/images/cross.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
 }
