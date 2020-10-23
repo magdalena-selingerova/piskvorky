@@ -229,7 +229,7 @@ a {
 .playing-field {
   display: flex;
   flex-wrap: wrap;
-  opacity: 0.5;
+  background-color: #b0a8d2;
   width: 100%;
 }
 .playing-field button {
@@ -238,11 +238,15 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 10%;
+  background-color: #b0a8d2;
 }
 
 .playing-field button:hover,
 .playing-field button:focus {
-  filter: brightness(200%);
+  border-radius: 5px;
+  border-color: black;
+  border-width: 1px;
+  background-color: #cbc5e5;
 }
 
 /* 4. úkol - hra */
@@ -275,6 +279,7 @@ a {
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center;
+  animation: createBox 0.15s;
 }
 
 .board__field--cross {
@@ -282,4 +287,14 @@ a {
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center;
+  animation: createBox 0.15s;
+}
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }

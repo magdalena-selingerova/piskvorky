@@ -1,3 +1,5 @@
+'use strict';
+
 let player = false;
 
 const currentPlayer = document.querySelector('.info');
