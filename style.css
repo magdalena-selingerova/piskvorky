@@ -251,11 +251,12 @@ a {
   font-size: 20px;
   margin: 0;
   padding-top: 10px;
+  position: relative;
 }
 .info-krizek:before,
 .info-krizek:after {
   position: absolute;
-  left: 160px;
+  left: 80px;
   content: '';
   height: 20px;
   border: 1px solid white;

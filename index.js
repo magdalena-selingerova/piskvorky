@@ -6,13 +6,13 @@ const Play = (event) => {
   if (player) {
     event.target.classList.add('board__field--cross');
     event.target.setAttribute('disabled', true);
-    currentPlayer.classList.remove('info-kolecko');
-    currentPlayer.classList.toggle('info-krizek');
+    currentPlayer.classList.remove('info-krizek');
+    currentPlayer.classList.toggle('info-kolecko');
   } else {
     event.target.classList.add('board__field--circle');
     event.target.setAttribute('disabled', true);
-    currentPlayer.classList.remove('info-krizek');
-    currentPlayer.classList.toggle('info-kolecko');
+    currentPlayer.classList.remove('info-kolecko');
+    currentPlayer.classList.toggle('info-krizek');
   }
   player = !player;
 };
